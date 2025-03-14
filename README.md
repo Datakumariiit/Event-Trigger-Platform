@@ -10,7 +10,7 @@ The Event Trigger Platform is a powerful tool designed to schedule and manage au
 3. python manage.py makemigrations
 4. python manage.py migrate
 5. python manage.py runserver
-6. Go to : http://localhost:8000./swagger/
+6. Go to : http://localhost:8000/swagger/
 7. ![alt text](image.png)  Uncomment the uppder database configeration and comment down below data base.
                 In settings.py change-->
                 # DATABASES = {
