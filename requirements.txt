@@ -1,0 +1,6 @@
+Django
+djangorestframework
+drf-yasg
+gunicorn
+django-database-url==1.0.3
+psycopg==2.9.5
