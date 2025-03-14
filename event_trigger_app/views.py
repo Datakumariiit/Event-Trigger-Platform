@@ -23,7 +23,7 @@ from .models import Trigger, EventLog
 @api_view(['POST'])
 @csrf_exempt
 def create_trigger(request):
-    data = json.loads(request.body)
+    data = request.data
     trigger = Trigger.objects.create(
         name=data['name'],
         trigger_type=data['trigger_type'],
@@ -78,7 +78,7 @@ def view_triggers(request):
 def edit_trigger(request, trigger_id):
     try:
         trigger = Trigger.objects.get(id=trigger_id)
-        data = json.loads(request.body)
+        data = request.data
         
         trigger.name = data.get('name', trigger.name)
         trigger.trigger_type = data.get('trigger_type', trigger.trigger_type)
