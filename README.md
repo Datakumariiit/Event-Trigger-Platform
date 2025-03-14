@@ -1,4 +1,5 @@
 **** I have deployed it on render for free. But it get automatcally shoutdown after every 15 minutes of inactivity because  I am using free version. ****
+Link:  https://event-trigger-platform-x0wy.onrender.com/swagger/
 ------------------------------------------------------------------------------------
 The Event Trigger Platform is a powerful tool designed to schedule and manage automated triggers based on fixed schedules or API requests. This platform supports both one-time and recurring triggers, providing flexibility for various automation needs.
 -----------------------------------------------------------------------------------
