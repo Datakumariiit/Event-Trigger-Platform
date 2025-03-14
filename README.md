@@ -8,11 +8,12 @@ The Event Trigger Platform is a powerful tool designed to schedule and manage au
 
 1. Clone the Repository : git clone https://github.com/Datakumariiit/Event-Trigger-Platform.git
 2. pip install -r requirements.txt
-3. python manage.py makemigrations
-4. python manage.py migrate
-5. python manage.py runserver
-6. Go to : http://localhost:8000/swagger/
-7. ![alt text](image.png)  Uncomment the uppder database configeration and comment down below data base.
+3. python manage.py createsuperuser
+4. python manage.py makemigrations
+5. python manage.py migrate
+6. python manage.py runserver
+7. Go to : http://localhost:8000/swagger/
+8. ![alt text](image.png)  Uncomment the uppder database configeration and comment down below data base.
                 In settings.py change-->
                 # DATABASES = {
                 #     'default': {
@@ -24,7 +25,7 @@ The Event Trigger Platform is a powerful tool designed to schedule and manage au
                     "default": dj_database_url.parse(os.environ.get("DATABASE_URL"))        ----> Comment this database.
                 }   
 
-8. API Endpoints:
+9. API Endpoints:
     1. Create Trigger
        Endpoint: POST/create_trigger/
        payload Example:  {
